@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarMenuActivity"
+    android:background="#F6F2FF">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Menu Makanan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_berat_bada"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Lagi mau mamam apa?"
+        android:paddingStart="40dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/search" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <ImageView
+            android:id="@+id/Food1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <ImageView
+            android:id="@+id/food2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+        <ImageView
+            android:id="@+id/food6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+        <ImageView
+            android:id="@+id/food5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <ImageView
+            android:id="@+id/food4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <ImageView
+            android:id="@+id/food3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10">
+
+        <ImageView
+            android:id="@+id/food7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <TextView
+            android:id="@+id/textFood7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dada Ayam"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/infoFood7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="164 kkal • 100 gram"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/addFood7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableTop="@drawable/arrow_back"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
