@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F2FF"
+    tools:context=".beratBadanActivity">
+
+
+    <ImageView
+        android:id="@+id/logoBB"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ungu" />
+
+    <TextView
+        android:id="@+id/textViewBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pilih jenis kelamin anda"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBB" />
+
+    <Button
+        android:id="@+id/buttonPria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_berat_bada"
+        android:text="Pria"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="7dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBB" />
+
+    <Button
+        android:id="@+id/buttonWanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_berat_bada"
+        android:text="Wanita"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="7dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewBB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

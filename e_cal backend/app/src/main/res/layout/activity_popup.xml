@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="325dp"
+    android:layout_height="225dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup"
+    android:elevation="10dp"
+
+    tools:context=".popup">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Porsi Makanan"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namaMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nama Makanan"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/infoGram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="164 kkal • 100 gram"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaMakanan" />
+
+    <EditText
+        android:id="@+id/porsiMakanan"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Porsi Makanan dalam Gram"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="@drawable/edittext_berat_bada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoGram"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/tambahMakan"
+        android:layout_width="134dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_radius"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Tambahkan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/porsiMakanan"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
